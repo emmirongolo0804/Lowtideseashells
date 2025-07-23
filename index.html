@@ -47,7 +47,7 @@
     }
 
     .social-icons img {
-      height: 70px; /* slightly larger */
+      height: 70px;
       width: 70px;
     }
 
@@ -72,7 +72,7 @@
       border-radius: 8px;
       margin: 20px;
       border: 1px solid #000;
-      height: 440px; /* reduced height */
+      height: 440px;
     }
 
     .search-input-container {
@@ -101,7 +101,7 @@
 
     .search-box {
       background-color: #a7cef6;
-      padding: 20px; /* restored from 10px to 20px */
+      padding: 20px;
       border-radius: 10px;
       border: 1px solid #000;
       flex: 2.4;
@@ -109,10 +109,10 @@
       flex-direction: column;
       justify-content: flex-start;
     }
-    
+
     .image-box {
       background-color: #a7cef6;
-      padding: 20px; /* restored from 10px to 20px */
+      padding: 20px;
       border-radius: 10px;
       border: 1px solid #000;
       flex: 1;
@@ -120,15 +120,44 @@
       align-items: center;
       justify-content: center;
     }
-    
+
     .image-box img {
-      width: 100%;       /* fill full width */
-      height: 100%;      /* fill full height */
+      width: 100%;
+      height: 100%;
       border-radius: 10px;
       border: 1px solid #000;
-      object-fit: cover; /* ensures complete fill, may crop */
+      object-fit: cover;
     }
 
+    .intro-outer {
+      background-color: #cce6ff;
+      padding: 30px;
+      margin: 20px;
+      border-radius: 10px;
+      border: 1px solid #000;
+    }
+
+    .intro-inner {
+      background-color: #f0f8ff;
+      padding: 30px;
+      border-radius: 10px;
+      border: 1px solid #000;
+      font-family: Georgia, serif;
+      color: #000;
+    }
+
+    .intro-inner h2 {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .intro-inner p {
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: justify;
+    }
   </style>
 </head>
 <body>
@@ -159,6 +188,19 @@
     </div>
     <div class="image-box">
       <img src="imagenes/shells.jpg" alt="Shells Image">
+    </div>
+  </div>
+
+  <div class="intro-outer">
+    <div class="intro-inner">
+      <h2>WEBSITE GOALS</h2>
+      <p>
+      The purpose of this website is to showcase and document my personal collection of seashells
+      from around the world. This project is the result of several years of passionate exploration 
+      and research. Each specimen was either collected during my own trips to the beach or found 
+      at thrift stores, offering a unique glimpse into global shell circulation. Moreover, all 
+      shells were found naturally empty, and no animals were harmed during the collection process.
+      </p>
     </div>
   </div>
 
