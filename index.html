@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Low Tide Seashells</title>
   <link rel="icon" type="image/png" href="imagenes/logo.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      font-family: Georgia, serif;
+      font-family: 'Playfair Display', serif;
       background-color: #f0f8ff;
     }
 
@@ -46,9 +50,15 @@
       margin-right: 10px;
     }
 
-    .social-icons img {
+    .social-icons a img {
       height: 70px;
       width: 70px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .social-icons a img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
     nav {
@@ -62,6 +72,16 @@
       border-radius: 4px;
       font-weight: normal;
       font-size: 18px;
+    }
+
+    nav div {
+      transition: transform 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+    }
+
+    nav div:hover {
+      transform: scale(1.05);
+      color: #005577;
     }
 
     .container {
@@ -119,6 +139,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
     }
 
     .image-box img {
@@ -127,45 +148,50 @@
       border-radius: 10px;
       border: 1px solid #000;
       object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .image-box img:hover {
+      transform: scale(1.05);
     }
 
     .intro-outer {
       background-color: #cce6ff;
-      padding: 30px;
-      margin: 20px;
+      padding: 30px 50px;
+      margin: 30px 40px;
       border-radius: 10px;
       border: 1px solid #000;
     }
 
     .intro-inner {
       background-color: #f0f8ff;
-      padding: 30px 80px; /* More space on the sides */
+      padding: 30px 60px;
       border-radius: 10px;
       border: 1px solid #000;
-      font-family: Georgia, serif;
       color: #000;
     }
 
     .intro-inner h2 {
       text-align: center;
-      font-size: 28px;
+      font-size: 32px;
       font-weight: bold;
-      margin-bottom: 30px; /* More space below the title */
+      margin-bottom: 35px;
     }
 
     .intro-inner p {
-      font-size: 20px; /* Larger font */
+      font-size: 20px;
       line-height: 1.8;
       text-align: justify;
     }
 
     footer {
       background-color: #cce6ff;
-      padding: 20px;
       text-align: center;
+      padding: 25px;
       font-size: 16px;
+      color: #000;
       border-top: 1px solid #000;
-      margin-top: 40px; /* Extra space above the footer */
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -175,10 +201,10 @@
     <img src="imagenes/logo.png" alt="Logo" class="logo">
     <div class="title">LOW TIDE SEASHELLS</div>
     <div class="social-icons">
-      <a href="https://www.instagram.com/lowtide_seashells_/" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.instagram.com/lowtide_seashells_/" target="_blank">
         <img src="imagenes/instagram.png" alt="Instagram">
       </a>
-      <a href="https://www.conchology.be/?t=261&error=Fill-in%20at%20least%201%20search%20field%20before%20searching" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.conchology.be/?t=261&error=Fill-in%20at%20least%201%20search%20field%20before%20searching" target="_blank">
         <img src="imagenes/shell-icon.png" alt="Shell Icon">
       </a>
     </div>
@@ -218,7 +244,7 @@
   </div>
 
   <footer>
-    &copy; 2025 Emmanuel Henao Estrada. All rights reserved.
+    © 2025 Emmanuel Henao Estrada – All rights reserved.
   </footer>
 
 </body>
