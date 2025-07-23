@@ -88,35 +88,31 @@
       color: #005577;
     }
 
-    .content-box {
+    .source-options {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 30px 20px;
+    }
+
+    .source-card {
       background-color: #cce6ff;
+      border: 1px solid #000;
+      border-radius: 10px;
       padding: 30px;
-      border-radius: 10px;
-      margin: 20px;
-      border: 1px solid #000;
-    }
-
-    .content-inner {
-      background-color: #f0f8ff;
-      padding: 30px 60px;
-      border-radius: 10px;
-      border: 1px solid #000;
-    }
-
-    .content-inner h2 {
-      font-size: 32px;
+      width: 300px;
       text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .content-inner ul {
-      font-family: Georgia, serif;
       font-size: 20px;
-      line-height: 1.7;
-      padding-left: 20px;
-      color: #222;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
     }
 
+    .source-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      background-color: #b3d9f7;
+    }
+    
     footer {
       background-color: #cce6ff;
       text-align: center;
@@ -150,16 +146,13 @@
     <div>Unknown Specimens</div>
   </nav>
 
-  <div class="content-box">
-    <div class="content-inner">
-      <h2>Sources</h2>
-      <ul>
-        <li><strong>Conchology.be</strong> – A comprehensive online shell database and store.</li>
-        <li><strong>Field Collection</strong> – Personally gathered specimens from beaches in Florida, Colombia, and Costa Rica.</li>
-        <li><strong>Thrift Shops</strong> – Various natural shells found second-hand in local markets and thrift stores.</li>
-        <li><strong>Books & Guides</strong> – "National Audubon Society Field Guide to Shells" and other marine biology references.</li>
-        <li><strong>Online Communities</strong> – Information and tips from shell enthusiast forums and identification groups.</li>
-      </ul>
+  <!-- NEW: Source Options -->
+  <div class="source-options">
+    <div class="source-card" onclick="window.location.href='personal-shells.html'">
+      🐚 Shells I Collected Myself
+    </div>
+    <div class="source-card" onclick="window.location.href='thrift-shells.html'">
+      🛍️ Shells from Thrift Stores
     </div>
   </div>
 
