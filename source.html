@@ -6,7 +6,6 @@
   <title>Source – Low Tide Seashells</title>
   <link rel="icon" type="image/png" href="imagenes/logo.png" />
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
 
   <style>
@@ -93,7 +92,7 @@
       justify-content: flex-start;
       gap: 40px;
       margin: 30px 20px;
-      padding-left: 60px; /* Push slightly away from left edge */
+      padding-left: 60px;
     }
 
     .source-card {
@@ -107,6 +106,15 @@
       font-family: Georgia, serif;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
+    }
+
+    .source-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid #888;
+      margin-bottom: 15px;
     }
 
     .source-card:hover {
@@ -151,9 +159,11 @@
   <!-- Source Options -->
   <div class="source-options">
     <div class="source-card" onclick="window.location.href='personal-shells.html'">
+      <img src="imagenes/personal-shells.jpg" alt="Collected Shells">
       Shells I Collected Myself
     </div>
     <div class="source-card" onclick="window.location.href='thrift-shells.html'">
+      <img src="imagenes/thrift-shells.jpg" alt="Thrift Store Shells">
       Shells from Thrift Stores
     </div>
     <!-- Future box space left blank -->
@@ -165,3 +175,4 @@
 
 </body>
 </html>
+
