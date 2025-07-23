@@ -62,8 +62,7 @@
 
     nav {
       background-color: #dddddd;
-      margin: 0 20px;
-      margin-bottom: 40px;
+      margin: 0 20px 40px 20px;
       padding: 18px 40px;
       display: flex;
       justify-content: flex-start;
@@ -91,25 +90,25 @@
       display: flex;
       justify-content: flex-start;
       gap: 40px;
-      margin-left: 100px; /* Push to the right */
+      margin-left: 100px;
       margin-right: 20px;
-      margin-bottom: 60px;
+      margin-bottom: 40px;
     }
 
     .source-card {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 300px;
+      width: 340px;
       cursor: pointer;
     }
 
     .image-box {
       width: 100%;
-      height: 180px;
+      height: 200px;
       overflow: hidden;
       border-radius: 10px;
-      border: 1px solid #888;
+      border: 1px solid #000;
       background-color: #cce6ff;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       box-sizing: border-box;
@@ -119,8 +118,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border-radius: 0; /* Remove rounding to match box */
-      display: block;   /* Removes default inline spacing */
+      display: block;
     }
 
     .description-box {
@@ -146,12 +144,15 @@
 
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 30px 10px;
       font-size: 16px;
-      color: #333;
-      margin-top: 20px;
+      color: #444;
+      background-color: #e0efff;
+      border-top: 1px solid #bbb;
+      margin: 0 20px 20px 20px;
+      border-radius: 10px;
     }
-    
+
   </style>
 </head>
 <body>
@@ -176,7 +177,6 @@
     <div>Unknown Specimens</div>
   </nav>
 
-  <!-- Source Options -->
   <div class="source-options">
     <div class="source-card" onclick="window.location.href='personal-shells.html'">
       <div class="image-box">
@@ -202,4 +202,3 @@
 
 </body>
 </html>
-
