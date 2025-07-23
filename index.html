@@ -60,7 +60,6 @@
     .social-icons a img:hover {
       transform: scale(1.1);
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      border-radius: 12px;
     }
 
     nav {
@@ -77,12 +76,14 @@
       font-family: Georgia, serif;
     }
 
-    nav div {
+    nav div, nav a {
       transition: transform 0.3s ease, color 0.3s ease;
       cursor: pointer;
+      text-decoration: none;
+      color: black;
     }
 
-    nav div:hover {
+    nav div:hover, nav a:hover {
       transform: scale(1.05);
       color: #005577;
     }
@@ -248,4 +249,3 @@
 
 </body>
 </html>
-
