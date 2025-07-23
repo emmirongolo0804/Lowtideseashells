@@ -1,93 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Low Tide Seashells</title>
-  <link rel="icon" type="image/png" href="imagenes/logo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sources – Low Tide Seashells</title>
+  <link rel="icon" type="image/png" href="imagenes/logo.png" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+
   <style>
     body {
       margin: 0;
-      font-family: Georgia, serif;
-      background-color: #f5f5f5;
+      font-family: 'Playfair Display', serif;
+      background-color: #f0f8ff;
     }
 
     header {
-      background-color: #dbeff0;
-      padding: 20px;
+      background-color: #cce6ff;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #000;
+      border-radius: 8px;
+      margin: 20px;
+    }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 1px solid black;
+      object-fit: cover;
+      background-color: #94bfe6;
+      padding: 5px;
+    }
+
+    .title {
+      font-size: 50px;
+      font-weight: bold;
       text-align: center;
-      border-bottom: 2px solid #a9c9cb;
+      flex-grow: 1;
     }
 
-    header img {
-      height: 50px;
-      vertical-align: middle;
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-right: 10px;
     }
 
-    header h1 {
-      display: inline;
-      font-size: 2em;
-      margin-left: 10px;
-      vertical-align: middle;
-      color: #2a5d61;
+    .social-icons a img {
+      height: 70px;
+      width: 70px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 12px;
+    }
+
+    .social-icons a img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
     nav {
-      background-color: #a9c9cb;
-      padding: 10px;
-      text-align: center;
-    }
-
-    nav a {
-      margin: 0 15px;
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
+      background-color: #dddddd;
+      margin: 0 20px 20px 20px;
+      padding: 18px 40px;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
+      justify-content: flex-start;
+      gap: 40px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      font-weight: normal;
+      font-size: 18px;
+      font-family: Georgia, serif;
     }
 
-    .shell-section {
-      background-color: #ffffff;
-      border: 2px solid #c3dadb;
-      border-radius: 10px;
+    nav div, nav a {
+      text-decoration: none;
+      color: black;
+      transition: transform 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+    }
+
+    nav div:hover, nav a:hover {
+      transform: scale(1.05);
+      color: #005577;
+    }
+
+    .content-box {
+      background-color: #cce6ff;
       padding: 30px;
+      border-radius: 10px;
       margin: 20px;
-      width: 90%;
-      max-width: 800px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+      border: 1px solid #000;
     }
 
-    .shell-section:hover {
-      transform: scale(1.01);
+    .content-inner {
+      background-color: #f0f8ff;
+      padding: 30px 60px;
+      border-radius: 10px;
+      border: 1px solid #000;
     }
 
-    .shell-section h2 {
-      color: #2a5d61;
-      margin-bottom: 15px;
+    .content-inner h2 {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 20px;
     }
 
-    .shell-section p {
-      font-size: 1.1em;
-      line-height: 1.6;
-      color: #333333;
+    .content-inner ul {
+      font-family: Georgia, serif;
+      font-size: 20px;
+      line-height: 1.7;
+      padding-left: 20px;
+      color: #222;
     }
 
     footer {
-      background-color: #a9c9cb;
-      color: white;
+      background-color: #cce6ff;
       text-align: center;
-      padding: 15px;
+      padding: 25px;
+      font-size: 16px;
+      color: #000;
+      border-top: 1px solid #000;
       margin-top: 40px;
     }
   </style>
@@ -95,31 +131,40 @@
 <body>
 
   <header>
-    <img src="imagenes/logo.png" alt="Low Tide Seashells Logo">
-    <h1>Low Tide Seashells</h1>
+    <img src="imagenes/logo.png" alt="Logo" class="logo" />
+    <div class="title">LOW TIDE SEASHELLS</div>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/lowtide_seashells_/" target="_blank">
+        <img src="imagenes/instagram.png" alt="Instagram" />
+      </a>
+      <a href="https://www.conchology.be/" target="_blank">
+        <img src="imagenes/shell-icon.png" alt="Shell Icon" />
+      </a>
+    </div>
   </header>
 
   <nav>
-    <a href="index.html">Inicio</a>
-    <a href="coleccion.html">Colección</a>
-    <a href="mapa.html">Mapa</a>
-    <a href="contacto.html">Contacto</a>
+    <a href="index.html">Home</a>
+    <a href="source.html">Source</a>
+    <div>Families</div>
+    <div>Unknown Specimens</div>
   </nav>
 
-  <main>
-    <section class="shell-section">
-      <h2>🌴 Shells Collected in Person</h2>
-      <p>These shells were gathered by me during trips to the Colombian coast. Each piece tells a story of warm sands, gentle tides, and hidden treasures waiting to be discovered.</p>
-    </section>
-
-    <section class="shell-section">
-      <h2>🛒 Shells from Thrift Stores</h2>
-      <p>These unique shells were found in secondhand shops in Grand Rapids, Michigan. Some likely originated from Florida, Asia, or Australia — though their precise journey remains a mystery.</p>
-    </section>
-  </main>
+  <div class="content-box">
+    <div class="content-inner">
+      <h2>Sources</h2>
+      <ul>
+        <li><strong>Conchology.be</strong> – A comprehensive online shell database and store.</li>
+        <li><strong>Field Collection</strong> – Personally gathered specimens from beaches in Florida, Colombia, and Costa Rica.</li>
+        <li><strong>Thrift Shops</strong> – Various natural shells found second-hand in local markets and thrift stores.</li>
+        <li><strong>Books & Guides</strong> – "National Audubon Society Field Guide to Shells" and other marine biology references.</li>
+        <li><strong>Online Communities</strong> – Information and tips from shell enthusiast forums and identification groups.</li>
+      </ul>
+    </div>
+  </div>
 
   <footer>
-    © 2025 Low Tide Seashells. Todos los derechos reservados.
+    © 2025 Emmanuel Henao Estrada – All rights reserved.
   </footer>
 
 </body>
