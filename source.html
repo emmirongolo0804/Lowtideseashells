@@ -90,9 +90,10 @@
 
     .source-options {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       gap: 40px;
       margin: 30px 20px;
+      padding-left: 60px; /* Push slightly away from left edge */
     }
 
     .source-card {
@@ -102,7 +103,8 @@
       padding: 30px;
       width: 300px;
       text-align: center;
-      font-size: 20px;
+      font-size: 18px;
+      font-family: Georgia, serif;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
     }
@@ -112,7 +114,7 @@
       box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
       background-color: #b3d9f7;
     }
-    
+
     footer {
       background-color: #cce6ff;
       text-align: center;
@@ -146,14 +148,15 @@
     <div>Unknown Specimens</div>
   </nav>
 
-  <!-- NEW: Source Options -->
+  <!-- Source Options -->
   <div class="source-options">
     <div class="source-card" onclick="window.location.href='personal-shells.html'">
-      🐚 Shells I Collected Myself
+      Shells I Collected Myself
     </div>
     <div class="source-card" onclick="window.location.href='thrift-shells.html'">
-      🛍️ Shells from Thrift Stores
+      Shells from Thrift Stores
     </div>
+    <!-- Future box space left blank -->
   </div>
 
   <footer>
