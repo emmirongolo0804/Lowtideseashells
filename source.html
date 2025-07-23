@@ -89,10 +89,11 @@
 
     .source-options {
       display: flex;
-      justify-content: flex-start; /* align left */
+      justify-content: flex-start;
       gap: 40px;
-      margin: 0 20px;
-      padding-left: 60px; /* push entire row to the right */
+      margin-left: 100px; /* Push to the right */
+      margin-right: 20px;
+      margin-bottom: 60px;
     }
 
     .source-card {
@@ -111,13 +112,15 @@
       border: 1px solid #888;
       background-color: #cce6ff;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-sizing: border-box;
     }
 
     .image-box img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border-radius: 0; /* remove inner rounding for clean edge alignment */
+      border-radius: 0; /* Remove rounding to match box */
+      display: block;   /* Removes default inline spacing */
     }
 
     .description-box {
@@ -131,6 +134,7 @@
       text-align: center;
       width: 100%;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-sizing: border-box;
     }
 
     .source-card:hover .image-box,
@@ -141,14 +145,13 @@
     }
 
     footer {
-      background-color: #cce6ff;
       text-align: center;
-      padding: 25px;
+      padding: 20px;
       font-size: 16px;
-      color: #000;
-      border-top: 1px solid #000;
+      color: #333;
       margin-top: 20px;
     }
+    
   </style>
 </head>
 <body>
@@ -191,7 +194,6 @@
         Shells from Thrift Stores
       </div>
     </div>
-    <!-- Future box space left blank -->
   </div>
 
   <footer>
@@ -200,3 +202,4 @@
 
 </body>
 </html>
+
