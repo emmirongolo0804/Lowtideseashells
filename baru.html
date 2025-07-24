@@ -88,8 +88,10 @@
     .gallery-container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 40px;
-      padding: 0 50px 60px 50px;
+      gap: 30px; /* ← updated from 40px to 30px */
+      padding: 0 50px 60px 50px; /* we'll refine this below */
+      margin-top: 30px;   /* space from nav */
+      margin-bottom: 30px; /* space to footer */
     }
 
     .gallery-item {
