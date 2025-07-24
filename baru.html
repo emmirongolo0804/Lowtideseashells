@@ -50,12 +50,11 @@
     .social-icons a img {
       height: 70px;
       width: 70px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: box-shadow 0.3s ease;
       border-radius: 12px;
     }
 
     .social-icons a img:hover {
-      transform: scale(1.1);
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
@@ -88,10 +87,10 @@
     .gallery-container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 30px; /* ← updated from 40px to 30px */
-      padding: 0 50px 60px 50px; /* we'll refine this below */
-      margin-top: 30px;   /* space from nav */
-      margin-bottom: -30px; /* space to footer */
+      gap: 30px;
+      padding: 0 50px 60px 50px;
+      margin-top: 30px;
+      margin-bottom: -30px;
     }
 
     .gallery-item {
@@ -102,23 +101,33 @@
       border-radius: 10px;
       padding: 10px;
       background-color: #fff;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
 
     .image-box {
       width: 100%;
-      height: 240px; /* Increased height */
+      height: 240px;
       overflow: hidden;
       border-radius: 8px;
       margin-bottom: 12px;
     }
 
-     .image-box img {
+    .image-box img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
       border: 1px solid #000;
       border-radius: 8px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .image-box img:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
 
     .text-box {
@@ -127,8 +136,8 @@
       text-align: center;
       font-size: 18px;
       font-family: Georgia, serif;
-      width: 100%; /* Match image width */
-      padding: 6px 0; /* Less side padding to fit box */
+      width: 100%;
+      padding: 6px 0;
       border-radius: 8px;
       border: 1px solid #000;
     }
