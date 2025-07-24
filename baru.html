@@ -88,35 +88,47 @@
     .gallery-container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 30px;
-      padding: 0 40px 60px 40px;
+      gap: 40px;
+      padding: 0 50px 60px 50px;
     }
 
     .gallery-item {
-      position: relative;
-      overflow: hidden;
-      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       border: 1px solid #000;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #fff;
     }
 
-    .gallery-item img {
+    .image-box {
       width: 100%;
-      height: 250px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
       display: block;
+      border: 1px solid #000;
+      border-radius: 8px;
     }
 
-    .overlay-text {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
+    .text-box {
       background-color: rgba(204, 230, 255, 0.9);
       color: black;
       text-align: center;
-      padding: 10px;
       font-size: 18px;
       font-family: Georgia, serif;
-      border-top: 1px solid #000;
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #000;
     }
 
     footer {
@@ -156,36 +168,52 @@
 
   <div class="gallery-container">
     <div class="gallery-item">
-      <img src="imagenes/gigas.jpg" alt="Shell 1">
-      <div class="overlay-text">Aliger Gigas</div>
+      <div class="image-box">
+        <img src="imagenes/gigas.jpg" alt="Shell 1">
+      </div>
+      <div class="text-box">Aliger Gigas</div>
     </div>
     <div class="gallery-item">
-      <img src="imagenes/oliva.jpg" alt="Shell 2">
-      <div class="overlay-text">Americoliva Sayana</div>
+      <div class="image-box">
+        <img src="imagenes/oliva.jpg" alt="Shell 2">
+      </div>
+      <div class="text-box">Americoliva Sayana</div>
     </div>
     <div class="gallery-item">
-      <img src="imagenes/bulla2.jpg" alt="Shell 3">
-      <div class="overlay-text">Bulla Occidentalis</div>
+      <div class="image-box">
+        <img src="imagenes/bulla2.jpg" alt="Shell 3">
+      </div>
+      <div class="text-box">Bulla Occidentalis</div>
     </div>
     <div class="gallery-item">
-      <img src="imagenes/bulla1.jpg" alt="Shell 4">
-      <div class="overlay-text">Bulla Striata</div>
+      <div class="image-box">
+        <img src="imagenes/bulla1.jpg" alt="Shell 4">
+      </div>
+      <div class="text-box">Bulla Striata</div>
     </div>
     <div class="gallery-item">
-      <img src="imagenes/beaded.jpg" alt="Shell 5">
-      <div class="overlay-text">Cenchritis Muricatus</div>
+      <div class="image-box">
+        <img src="imagenes/beaded.jpg" alt="Shell 5">
+      </div>
+      <div class="text-box">Cenchritis Muricatus</div>
     </div>
     <div class="gallery-item">
-      <img src="imagenes/cerith2.jpg" alt="Shell 6">
-      <div class="overlay-text">Cerithium Atratum</div>
+      <div class="image-box">
+        <img src="imagenes/cerith2.jpg" alt="Shell 6">
+      </div>
+      <div class="text-box">Cerithium Atratum</div>
     </div>
     <div class="gallery-item">
-      <img src="imagenes/cerith.jpg" alt="Shell 7">
-      <div class="overlay-text">Cerithium Litteratum</div>
+      <div class="image-box">
+        <img src="imagenes/cerith.jpg" alt="Shell 7">
+      </div>
+      <div class="text-box">Cerithium Litteratum</div>
     </div>
     <div class="gallery-item">
-      <img src="imagenes/pica.jpg" alt="Shell 8">
-      <div class="overlay-text">Cittarium Pica</div>
+      <div class="image-box">
+        <img src="imagenes/pica.jpg" alt="Shell 8">
+      </div>
+      <div class="text-box">Cittarium Pica</div>
     </div>
   </div>
 
