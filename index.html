@@ -16,6 +16,10 @@
       background-color: #f0f8ff;
     }
 
+    .section-spacing {
+      margin-bottom: 30px;
+    }
+
     header {
       background-color: #cce6ff;
       padding: 40px;
@@ -64,7 +68,7 @@
 
     nav {
       background-color: #dddddd;
-      margin: 0 20px 20px 20px;
+      margin: 0 20px;
       padding: 18px 40px;
       display: flex;
       justify-content: flex-start;
@@ -94,7 +98,7 @@
       padding: 40px;
       background-color: #cce6ff;
       border-radius: 8px;
-      margin: 20px;
+      margin: 0 20px;
       border: 1px solid #000;
       height: 440px;
     }
@@ -157,7 +161,7 @@
     .intro-outer {
       background-color: #cce6ff;
       padding: 30px 30px;
-      margin: 20px;
+      margin: 0 20px;
       border-radius: 10px;
       border: 1px solid #000;
     }
@@ -189,18 +193,17 @@
       text-align: center;
       padding: 30px 10px;
       font-size: 16px;
-      color: #000; /* changed from #444 to black */
-      background-color: #cce6ff; /* matches header and cards */
-      border: 1px solid #000; /* matches other boxes */
+      color: #000;
+      background-color: #cce6ff;
+      border: 1px solid #000;
       margin: 0 20px 20px 20px;
       border-radius: 10px;
     }
-    
   </style>
 </head>
 <body>
 
-  <header>
+  <header class="section-spacing">
     <img src="imagenes/logo.png" alt="Logo" class="logo">
     <div class="title">LOW TIDE SEASHELLS</div>
     <div class="social-icons">
@@ -213,7 +216,7 @@
     </div>
   </header>
 
-  <nav>
+  <nav class="section-spacing">
     <a href="index.html">Home</a>
     <a href="source.html">Sources</a>
     <a href="colombia.html">Countries</a>
@@ -221,7 +224,7 @@
     <a href="unknown.html">Unknown Specimens</a>
   </nav>
 
-  <div class="container">
+  <div class="container section-spacing">
     <div class="search-box">
       <div class="search-input-container">
         <input type="text" placeholder="Search">
@@ -233,7 +236,7 @@
     </div>
   </div>
 
-  <div class="intro-outer">
+  <div class="intro-outer section-spacing">
     <div class="intro-inner">
       <h2>WEBSITE GOALS</h2>
       <p>
