@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Decameron Barú – Low Tide Seashells</title>
+  <link rel="icon" type="image/png" href="imagenes/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background-color: #f0f8ff;
+    }
+
+    header {
+      background-color: #cce6ff;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #000;
+      border-radius: 8px;
+      margin: 20px 20px 30px 20px;
+    }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 1px solid black;
+      object-fit: cover;
+      background-color: #94bfe6;
+      padding: 5px;
+    }
+
+    .title {
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-right: 10px;
+    }
+
+    .social-icons a img {
+      height: 70px;
+      width: 70px;
+      transition: box-shadow 0.3s ease;
+      border-radius: 12px;
+    }
+
+    .social-icons a img:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    nav {
+      background-color: #dddddd;
+      margin: 0 20px 30px 20px;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: flex-start;
+      gap: 40px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      font-weight: normal;
+      font-size: 18px;
+      font-family: Georgia, serif;
+    }
+
+    nav div, nav a {
+      text-decoration: none;
+      color: black;
+      transition: transform 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+    }
+
+    nav div:hover, nav a:hover {
+      transform: scale(1.05);
+      color: #005577;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      padding: 0 75px 60px 75px;
+      margin-top: 30px;
+      margin-bottom: -30px;
+    }
+
+    .gallery-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid #000;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #fff;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .image-box {
+      width: 100%;
+      height: 225px;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border: 1px solid #000;
+      border-radius: 8px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .image-box img:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .text-box {
+      background-color: rgba(204, 230, 255, 0.9);
+      color: black;
+      text-align: center;
+      font-size: 18px;
+      font-family: Georgia, serif;
+      width: 100%;
+      padding: 6px 0;
+      border-radius: 8px;
+      border: 1px solid #000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 16px;
+      color: #000;
+      background-color: #cce6ff;
+      border: 1px solid #000;
+      margin: 0px 20px 20px 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="imagenes/logo.png" alt="Logo" class="logo" />
+    <div class="title">LOW TIDE SEASHELLS</div>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/lowtide_seashells_/" target="_blank">
+        <img src="imagenes/instagram.png" alt="Instagram" />
+      </a>
+      <a href="https://www.conchology.be/" target="_blank">
+        <img src="imagenes/shell-icon.png" alt="Shell Icon" />
+      </a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="source.html">Sources</a>
+    <a href="countries.html">Countries</a>
+    <a href="families.html">Families</a>
+    <a href="unknown.html">Unknown Specimens</a>
+  </nav>
+
+  <div class="gallery-container">
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/gigas.jpg" alt="Shell 1">
+      </div>
+      <div class="text-box">Aliger Gigas</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/bulla2.jpg" alt="Shell 3">
+      </div>
+      <div class="text-box">Bulla Occidentalis/Solida</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/beaded.jpg" alt="Shell 5">
+      </div>
+      <div class="text-box">Cenchritis Muricatus</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/cerith2.jpg" alt="Shell 6">
+      </div>
+      <div class="text-box">Cerithium Atratum</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/cerith.jpg" alt="Shell 7">
+      </div>
+      <div class="text-box">Cerithium Litteratum</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/pica.jpg" alt="Shell 8">
+      </div>
+      <div class="text-box">Cittarium Pica</div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/codakia.jpg" alt="Shell 1">
+      </div>
+      <div class="text-box">Codakia Orbicularis</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/columbella.jpg" alt="Shell 2">
+      </div>
+      <div class="text-box">Columbella Mercatoria</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/engina.jpg" alt="Shell 3">
+      </div>
+      <div class="text-box">Engina Turbinella</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/hollisteri.jpg" alt="Shell 4">
+      </div>
+      <div class="text-box">Fasciolaria Tulipa</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/venus.jpg" alt="Shell 5">
+      </div>
+      <div class="text-box">Hysteroconcha Dione</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/paphia.jpg" alt="Shell 6">
+      </div>
+      <div class="text-box">Lirophora Paphia</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/long.jpg" alt="Shell 7">
+      </div>
+      <div class="text-box">Lithopoma Phoebium</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/tectum.jpg" alt="Shell 2">
+      </div>
+      <div class="text-box">Lithopoma Tectum/Tuber</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/oliva.jpg" alt="Shell 2">
+      </div>
+      <div class="text-box">Oliva Fulgurator</div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/litoraria.jpg" alt="Shell 3">
+      </div>
+      <div class="text-box">Littoraria Nebulosa</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/cowrie.jpg" alt="Shell 4">
+      </div>
+      <div class="text-box">Luria Cinerea</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/maculata.jpg" alt="Shell 5">
+      </div>
+      <div class="text-box">Macrocallista Maculata</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/marisa.jpg" alt="Shell 6">
+      </div>
+      <div class="text-box">Marisa Cornuarietis</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/melongena.jpg" alt="Shell 7">
+      </div>
+      <div class="text-box">Melongena Melongena</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/modulus.jpg" alt="Shell 2">
+      </div>
+      <div class="text-box">Modulus Modulus</div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/morum.jpg" alt="Shell 3">
+      </div>
+      <div class="text-box">Morum Oniscus</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/auger.jpg" alt="Shell 4">
+      </div>
+      <div class="text-box">Neoterebra Dislocata</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/fulguranus.jpg" alt="Shell 5">
+      </div>
+      <div class="text-box">Nerita Fulgurans/Tessellata</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/versicolor.jpg" alt="Shell 6">
+      </div>
+      <div class="text-box">Nerita Versicolor</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/olivella.jpg" alt="Shell 7">
+      </div>
+      <div class="text-box">Olivella Lactea/Volutella</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/polinices.jpg" alt="Shell 2">
+      </div>
+      <div class="text-box">Polinices Lacteus</div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/coffee.jpg" alt="Shell 5">
+      </div>
+      <div class="text-box">Pusula Pediculus</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/stigmaulax.jpg" alt="Shell 6">
+      </div>
+      <div class="text-box">Stigmaulax Sulcatus</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/indian.jpg" alt="Shell 2">
+      </div>
+      <div class="text-box">Strombus Pugilis</div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Emmanuel Henao Estrada – All rights reserved.
+  </footer>
+
+</body>
+</html>
