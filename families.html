@@ -141,7 +141,7 @@
     .family-column a {
       display: block;
       margin-bottom: 10px;
-      font-size: 17px;
+      font-size: 19px;
       color: #000;
       text-decoration: none;
       text-transform: capitalize;
@@ -161,6 +161,24 @@
       gap: 30px;
       margin-top: 30px;
       flex-wrap: wrap;
+    }
+
+    .stat-wrapper {
+      background-color: #cce6ff;
+      margin: 30px;
+      border: 1px solid #000;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    
+    .stat-box {
+      background-color: #e6f3ff;
+      border: 1px solid #000;
+      padding: 20px;
+      font-size: 20px;
+      border-radius: 10px;
+      min-width: 220px;
+      text-align: center;
     }
 
     .stat-box {
@@ -275,11 +293,18 @@
         </div>
       </div>
 
-      <div class="summary-stats">
+    <div class="summary-stats">
+      <div class="stat-wrapper">
         <div class="stat-box">Number of Families: <strong>(34)</strong></div>
+      </div>
+      <div class="stat-wrapper">
         <div class="stat-box">Number of Species: <strong>(64)</strong></div>
+      </div>
+      <div class="stat-wrapper">
         <div class="stat-box">Number of Shells: <strong>(809)</strong></div>
       </div>
+    </div>
+
     </div>
   </div>
 
