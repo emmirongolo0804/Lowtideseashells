@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ambiguous Species – Low Tide Seashells</title>
+  <link rel="icon" type="image/png" href="imagenes/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background-color: #f0f8ff;
+    }
+
+    header {
+      background-color: #cce6ff;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #000;
+      border-radius: 8px;
+      margin: 20px 20px 30px 20px;
+    }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 1px solid black;
+      object-fit: cover;
+      background-color: #94bfe6;
+      padding: 5px;
+    }
+
+    .title {
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-right: 10px;
+    }
+
+    .social-icons a img {
+      height: 70px;
+      width: 70px;
+      transition: box-shadow 0.3s ease;
+      border-radius: 12px;
+    }
+
+    .social-icons a img:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    nav {
+      background-color: #dddddd;
+      margin: 0 20px 30px 20px;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: flex-start;
+      gap: 40px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      font-weight: normal;
+      font-size: 18px;
+      font-family: Georgia, serif;
+    }
+
+    nav div, nav a {
+      text-decoration: none;
+      color: black;
+      transition: transform 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+    }
+
+    nav div:hover, nav a:hover {
+      transform: scale(1.05);
+      color: #005577;
+    }
+
+    .families-container {
+      border: 2px solid #000;
+      margin: 0 40px;
+      padding: 30px 20px;
+      background-color: #e6f3ff;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .families-container h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .family-columns {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .family-column {
+      background-color: #b3d9ff;
+      border: 1px solid #000;
+      border-radius: 6px;
+      padding: 20px;
+      width: 250px;
+      text-align: left;
+    }
+
+    .family-column a {
+      display: block;
+      margin: 6px 0;
+      font-size: 17px;
+      color: #000;
+      text-decoration: none;
+    }
+
+    .family-column a:hover {
+      color: #003366;
+    }
+
+    .summary-stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .stat-box {
+      background-color: #e6f3ff;
+      border: 2px solid #000;
+      padding: 20px;
+      font-size: 20px;
+      border-radius: 10px;
+      min-width: 220px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 16px;
+      color: #000;
+      background-color: #cce6ff;
+      border: 1px solid #000;
+      margin: 0px 20px 20px 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="imagenes/logo.png" alt="Logo" class="logo" />
+    <div class="title">LOW TIDE SEASHELLS</div>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/lowtide_seashells_/" target="_blank">
+        <img src="imagenes/instagram.png" alt="Instagram" />
+      </a>
+      <a href="https://www.conchology.be/?t=261" target="_blank">
+        <img src="imagenes/conchology.png" alt="Shell Icon" />
+      </a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="source.html">Sources</a>
+    <a href="countries.html">Countries</a>
+    <a href="families.html">Families</a>
+    <a href="unknown.html">Unknown Species</a>
+    <a href="ambiguous.html">Ambiguous Species</a>
+  </nav>
+
+  <div class="families-container">
+    <h2>FAMILIAS</h2>
+    <div class="family-columns">
+      <div class="family-column">
+        <a href="#">AMPULLARIIDAE (1)</a>
+        <a href="#">ARENIDAE (2)</a>
+        <a href="#">BULLIDAE (1)</a>
+        <a href="#">BUSYCONIDAE (2)</a>
+        <a href="#">CANCELLARIIDAE (3)</a>
+        <a href="#">CASSIDAE (4)</a>
+        <a href="#">CERITHIDAE (2)</a>
+        <a href="#">COLUMBELLIDAE (3)</a>
+        <a href="#">CONIDAE (3)</a>
+        <a href="#">CYPRAEIDAE (2)</a>
+        <a href="#">DONACIDAE (1)</a>
+        <a href="#">ELLOBIIDAE (1)</a>
+      </div>
+      <div class="family-column">
+        <a href="#">FASCIOLARIIDAE (4)</a>
+        <a href="#">HARPIDAE (1)</a>
+        <a href="#">LITTORINIDAE (3)</a>
+        <a href="#">LUCINIDAE (3)</a>
+        <a href="#">MARGINELLIDAE (2)</a>
+        <a href="#">MELOONGENIDAE (1)</a>
+        <a href="#">MODULIDAE (1)</a>
+        <a href="#">MURICIDAE (4)</a>
+        <a href="#">NATICIDAE (3)</a>
+        <a href="#">NERITIDAE (3)</a>
+        <a href="#">OLIVIDAE (3)</a>
+        <a href="#">OVULIDAE (1)</a>
+      </div>
+      <div class="family-column">
+        <a href="#">PISANIIDAE (2)</a>
+        <a href="#">STROMBIDAE (4)</a>
+        <a href="#">TEGULIDAE (3)</a>
+        <a href="#">TELLINIDAE (2)</a>
+        <a href="#">TEREBRIDAE (3)</a>
+        <a href="#">TRIVIIDAE (1)</a>
+        <a href="#">TURBINELLIDAE (2)</a>
+        <a href="#">TURBINIDAE (3)</a>
+        <a href="#">TURRITELLIDAE (3)</a>
+        <a href="#">VENERIDAE (3)</a>
+      </div>
+    </div>
+
+    <div class="summary-stats">
+      <div class="stat-box">NUMBER OF FAMILIES: <strong>(34)</strong></div>
+      <div class="stat-box">NUMBER OF SPECIES: <strong>(64)</strong></div>
+      <div class="stat-box">NUMBER OF SHELLS: <strong>(809)</strong></div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Emmanuel Henao Estrada – All rights reserved.
+  </footer>
+
+</body>
+</html>
