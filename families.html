@@ -91,26 +91,32 @@
       padding: 30px 0;
     }
 
-    .families-container {
+    .family-title-box {
       background-color: #cce6ff;
-      border: 1px solid #000;
-      border-radius: 6px;
-      margin: 0 40px;
-      padding: 30px 20px;
+      border-bottom: 1px solid #000;
+      padding: 20px 40px 10px 40px;
       text-align: center;
     }
 
-    .families-container h2 {
+    .family-title-box h2 {
       font-size: 32px;
       font-weight: bold;
-      margin-bottom: 30px;
-      text-transform: capitalize;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .families-container {
+      background-color: #e6f3ff;
+      border: 1px solid #000;
+      border-radius: 6px;
+      margin: 20px 40px;
+      padding: 30px 20px;
     }
 
     .family-columns {
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 30px;
       flex-wrap: wrap;
       margin-bottom: 40px;
     }
@@ -120,7 +126,7 @@
       border: 1px solid #000;
       border-radius: 6px;
       padding: 20px;
-      width: 250px;
+      width: 300px;
       text-align: left;
     }
 
@@ -148,7 +154,7 @@
     }
 
     .stat-box {
-      background-color: #e6f3ff;
+      background-color: #cce6ff;
       border: 1px solid #000;
       padding: 20px;
       font-size: 20px;
@@ -193,8 +199,11 @@
   </nav>
 
   <div class="families-wrapper">
+    <div class="family-title-box">
+      <h2>FAMILIES</h2>
+    </div>
+
     <div class="families-container">
-      <h2>Families</h2>
       <div class="family-columns">
         <div class="family-column">
           <a href="#">Ampullariidae <span>(1)</span></a>
