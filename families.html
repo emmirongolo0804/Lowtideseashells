@@ -157,17 +157,20 @@
     .summary-stats {
       display: flex;
       justify-content: center;
-      gap: 30px;
-      margin-top: 30px;
+      margin: 0 75px 30px 75px; /* Matches .families-wrapper */
       flex-wrap: wrap;
+      gap: 0; /* Remove gap so widths align */
     }
-
+    
     .stat-wrapper {
+      flex: 1;
+      margin: 0 30px 30px 30px; /* Small margin between boxes */
       background-color: #cce6ff;
-      margin: 0 0 30px 0;
       border: 1px solid #000;
       border-radius: 10px;
       padding: 20px;
+      box-sizing: border-box;
+      min-width: 220px;
     }
     
     .stat-box {
@@ -176,7 +179,6 @@
       padding: 20px;
       font-size: 20px;
       border-radius: 10px;
-      min-width: 220px;
       text-align: center;
     }
 
