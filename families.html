@@ -120,9 +120,9 @@
 
     .family-columns {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 30px;
-      flex-wrap: wrap;
     }
 
     .family-column {
@@ -130,8 +130,9 @@
       border: 1px solid #000;
       border-radius: 6px;
       padding: 20px;
-      width: 300px;
-      text-align: left;
+      flex: 1 1 280px;
+      max-width: 300px;
+      box-sizing: border-box;
     }
 
     .family-column a {
@@ -155,7 +156,7 @@
       display: flex;
       justify-content: center;
       gap: 30px;
-      padding: 0 20px 30px 20px;
+      padding: 0 30px 30px 30px;
       flex-wrap: wrap;
     }
 
@@ -177,6 +178,22 @@
       border: 1px solid #000;
       margin: 0 20px 20px 20px;
       border-radius: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .title {
+        font-size: 32px;
+      }
+
+      .social-icons a img {
+        height: 50px;
+        width: 50px;
+      }
+
+      .logo {
+        width: 100px;
+        height: 100px;
+      }
     }
   </style>
 </head>
