@@ -94,8 +94,9 @@
       background-color: #e6f3ff;
       border: 1px solid #000;
       border-radius: 6px;
-      padding: 30px;
-      margin: 0; /* changed from margin: 30px */
+      margin: 30px;
+      padding: 0 30px 30px 30px; /* Add this line */
+      box-sizing: border-box;
     }
 
     .family-title-box {
@@ -103,7 +104,7 @@
       border: 1px solid #000;
       border-radius: 6px;
       padding: 20px;
-      margin-bottom: 30px; /* changed from margin: 30px */
+      margin: 30px 0; /* Remove horizontal margin */
       text-align: center;
     }
 
@@ -123,7 +124,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 30px;
-      margin: 0; /* changed from margin: 0 30px */
+      margin: 0; /* Remove horizontal margin */
     }
 
     .family-column {
