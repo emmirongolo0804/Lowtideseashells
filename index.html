@@ -308,18 +308,24 @@
 
       .search-input-container {
         display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
+        align-items: center;
+        gap: 10px; /* space between input and button */
+        padding: 0; /* remove padding if any */
+        margin: 0;
+        height: 40px; /* or try 36px if needed */
       }
 
       .search-input-container input[type="text"] {
-        flex: 1 1 60%;
-        min-width: 150px;
-        box-sizing: border-box;
+        flex: 1;
+        padding: 6px 8px;
+        font-size: 14px;
+        height: 36px;
       }
-
+      
       .search-input-container button {
-        flex: 0 0 auto;
+        padding: 6px 10px;
+        font-size: 14px;
+        height: 36px;
       }
 
       .image-box {
