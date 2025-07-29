@@ -270,13 +270,39 @@
       .mobile-nav {
         display: none;
         flex-direction: column;
-        align-items: center;
+        align-items: stretch; /* Ensures full width */
         background-color: #dddddd;
-        margin: 0 20px 20px 20px;
+        margin: 0 20px 10px 20px;
         border: 1px solid #000;
         border-radius: 6px;
         padding: 8px;
         gap: 6px;
+      }
+      
+      .mobile-nav a {
+        display: flex;
+        justify-content: space-between; /* Separates text and arrow */
+        align-items: center;
+        background-color: #f0f0f0;
+        padding: 10px 12px;
+        font-size: 14px;
+        font-family: Georgia, serif;
+        border: 1px solid #aaa;
+        border-radius: 6px;
+        color: #000;
+        text-decoration: none;
+        transition: background-color 0.2s;
+      }
+      
+      .mobile-nav a::after {
+        content: "›"; /* Slightly nicer than plain > */
+        font-size: 16px;
+        margin-left: 10px;
+        color: #555;
+      }
+      
+      .mobile-nav a:hover {
+        background-color: #e0e0e0;
       }
 
       .mobile-nav.open {
