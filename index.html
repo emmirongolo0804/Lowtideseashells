@@ -258,15 +258,15 @@
         display: block;
         background-color: #dddddd;
         text-align: center;
-        padding: 15px;
-        font-size: 18px;
+        padding: 10px;
+        font-size: 16px;
         font-weight: bold;
         cursor: pointer;
         border: 1px solid #000;
         border-radius: 6px;
         margin: 0 20px 10px 20px;
       }
-
+    
       .mobile-nav {
         display: none;
         flex-direction: column;
@@ -275,8 +275,8 @@
         margin: 0 20px 20px 20px;
         border: 1px solid #000;
         border-radius: 6px;
-        padding: 10px;
-        gap: 8px;
+        padding: 8px;
+        gap: 6px;
       }
 
       .mobile-nav.open {
@@ -298,9 +298,10 @@
       .search-box,
       .image-box {
         width: 100%;
-        margin: 0 20px;
+        max-width: 100%;
+        margin: 0 20px 10px 20px;
         background-color: #cce6ff;
-        margin-bottom: 10px;
+        box-sizing: border-box;
       }
 
       .search-input-container {
@@ -322,12 +323,13 @@
       .image-box {
         height: auto;
         max-height: 300px;
+        padding: 10px;
       }
 
       .image-box img {
         width: 100%;
         height: auto;
-        object-fit: contain;
+        object-fit: cover;
       }
 
       .intro-outer {
