@@ -44,6 +44,7 @@
       font-weight: bold;
       text-align: center;
       flex-grow: 1;
+      white-space: nowrap; /* Force single line */
     }
 
     .social-icons {
@@ -215,7 +216,7 @@
       }
 
       .title {
-        font-size: 18px;
+        font-size: 22px;
         font-weight: bold;
         text-align: center;
         line-height: 1.2;
@@ -223,17 +224,18 @@
         flex-direction: column;
         justify-content: center;
         flex-grow: 1;
+        white-space: normal; /* allow two lines */
       }
 
       .social-icons {
-        flex-direction: column;
-        gap: 8px;
+        flex-direction: row;
+        gap: 6px;
         margin: 0;
       }
 
       .social-icons a img {
-        width: 35px;
-        height: 35px;
+        width: 28px;
+        height: 28px;
       }
 
       nav {
@@ -354,8 +356,7 @@
   <header class="section-spacing">
     <img src="imagenes/logo.png" alt="Logo" class="logo">
     <div class="title">
-      <div>LOW TIDE</div>
-      <div>SEASHELLS</div>
+      <span>LOW TIDE SEASHELLS</span>
     </div>
     <div class="social-icons">
       <a href="https://www.instagram.com/lowtide_seashells_/" target="_blank">
