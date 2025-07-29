@@ -297,9 +297,11 @@
 
       .search-box,
       .image-box {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 20px 10px 20px;
+        width: calc(100% - 40px); /* accounts for left and right margins */
+        margin: 0 auto 10px auto; /* centers the box */
+        padding: 10px;
+        border: 1px solid #000;
+        border-radius: 10px;
         background-color: #cce6ff;
         box-sizing: border-box;
       }
@@ -323,7 +325,6 @@
       .image-box {
         height: auto;
         max-height: 300px;
-        padding: 10px;
       }
 
       .image-box img {
