@@ -373,11 +373,13 @@
       }
 
       .intro-inner {
-        padding: 15px 30px 13px 30px;
+        padding: 15px 30px 12px 30px;
       }
 
       .intro-inner h2 {
         font-size: 22px;
+        margin: 0; /* remove default margin that may unbalance vertical spacing */
+        line-height: 1.2;
       }
 
       .intro-inner p {
@@ -388,8 +390,9 @@
         background-color: #cce6ff;
         border: 1px solid #000;
         border-radius: 8px;
-        padding: 5px 0;
-        margin-bottom: 10px 0 20px 0;
+        padding: 4px 0 6px 0; /* less top/bottom padding */
+        margin-top: 20px;     /* increased space above title-box */
+        margin-bottom: 15px;  /* creates 5px more gap to paragraph below */
         text-align: center;
       }
 
