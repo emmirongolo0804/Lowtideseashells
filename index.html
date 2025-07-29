@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Low Tide Seashells</title>
   <link rel="icon" type="image/png" href="imagenes/logo.png">
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -78,6 +76,7 @@
       font-weight: normal;
       font-size: 18px;
       font-family: Georgia, serif;
+      flex-wrap: wrap;
     }
 
     nav div, nav a {
@@ -198,6 +197,84 @@
       border: 1px solid #000;
       margin: 0 20px 20px 20px;
       border-radius: 10px;
+    }
+
+    /* ------------------ MOBILE STYLES ------------------ */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .logo {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+      }
+
+      .title {
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+
+      .social-icons {
+        justify-content: center;
+        margin: 10px 0;
+      }
+
+      .social-icons a img {
+        width: 50px;
+        height: 50px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 15px;
+        font-size: 16px;
+      }
+
+      .container {
+        flex-direction: column;
+        height: auto;
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .search-input-container {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .search-box,
+      .image-box {
+        width: 100%;
+      }
+
+      .intro-outer {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .intro-inner {
+        padding: 20px;
+      }
+
+      .intro-inner h2 {
+        font-size: 24px;
+      }
+
+      .intro-inner p {
+        font-size: 18px;
+      }
+
+      footer {
+        margin: 20px;
+        padding: 20px 10px;
+        font-size: 14px;
+      }
     }
   </style>
 </head>
