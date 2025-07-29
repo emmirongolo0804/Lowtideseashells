@@ -319,17 +319,22 @@
     
       .family-columns {
         flex-direction: column;
-        gap: 10px;
+        gap: 0;
       }
     
       .family-column {
         flex: none;
         width: 100%;
-        padding: 10px;
+        padding: 0;
+      }
+    
+      .family-columns > .family-column:not(:first-child) {
+        display: none;
       }
     
       .family-column a {
         font-size: 16px;
+        padding: 8px 0;
       }
     
       .summary-stats {
