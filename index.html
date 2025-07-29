@@ -201,32 +201,39 @@
     /* ---------- MOBILE STYLES ---------- */
     @media (max-width: 768px) {
       header {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        padding: 20px;
-        text-align: center;
-        gap: 15px;
-      }
-
-      .logo {
-        width: 90px;
-        height: 90px;
-        margin: 0 auto;
-      }
-
-      .title {
-        font-size: 28px;
-        margin: 0;
-      }
-
-      .social-icons {
-        justify-content: center;
+        justify-content: space-between;
+        padding: 10px 15px;
         gap: 10px;
       }
 
+      .logo {
+        width: 65px;
+        height: 65px;
+        flex-shrink: 0;
+      }
+
+      .title {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+      }
+
+      .social-icons {
+        flex-direction: column;
+        gap: 8px;
+        margin: 0;
+      }
+
       .social-icons a img {
-        width: 45px;
-        height: 45px;
+        width: 35px;
+        height: 35px;
       }
 
       nav {
@@ -346,7 +353,10 @@
 
   <header class="section-spacing">
     <img src="imagenes/logo.png" alt="Logo" class="logo">
-    <div class="title">LOW TIDE SEASHELLS</div>
+    <div class="title">
+      <div>LOW TIDE</div>
+      <div>SEASHELLS</div>
+    </div>
     <div class="social-icons">
       <a href="https://www.instagram.com/lowtide_seashells_/" target="_blank">
         <img src="imagenes/instagram.png" alt="Instagram">
@@ -388,7 +398,6 @@
     </div>
   </div>
 
-  <!-- Mobile separated containers -->
   <div class="search-container section-spacing">
     <div class="search-box">
       <div class="search-input-container">
