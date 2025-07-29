@@ -314,25 +314,31 @@
         padding: 10px;
       }
 
-    .family-title-box {
-      padding: 10px;
-      margin-bottom: 10px;
-      text-align: center;
-    }
+      .family-title-box {
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
     
       .family-title-box h2 {
         font-size: 20px;
       }
     
       .family-columns {
-        flex-direction: column;
-        gap: 20px;
+        display: block; /* override flex layout */
       }
-    
+      
       .family-column {
-        flex: none;
         width: 100%;
         padding: 15px;
+      }
+      
+      .family-columns .family-column:not(:first-child) {
+        display: none; /* hide columns 2 and 3 */
+      }
+      
+      .family-columns .family-column:first-child {
+        display: block;
       }
     
       .family-column a {
