@@ -155,7 +155,134 @@
       margin: 0 20px 20px 20px;
       border-radius: 10px;
     }
+    /* ---------- MOBILE STYLES ---------- */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 20px; /* Increased padding for taller header */
+        gap: 10px;
+      }
 
+      header.section-spacing {
+        margin-bottom: 10px;
+      }
+    
+      .logo {
+        width: 65px;
+        height: 65px;
+        flex-shrink: 0;
+      }
+    
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+        white-space: normal;
+      }
+    
+      .social-icons {
+        flex-direction: column; /* Stack icons vertically */
+        gap: 0px;               /* Less spacing between them */
+        margin: 0;
+        margin-top: 7px;
+      }
+    
+      .social-icons a img {
+        width: 35px;
+        height: 35px;
+        border-radius: 8px;      /* Rounded corners on square icons */
+        object-fit: cover;       /* Make sure they’re square visually */
+      }
+
+      .social-icons a img.instagram-icon {
+        width: 32px;
+        height: 32px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .mobile-nav-toggle {
+        display: block;
+        background-color: #dddddd;
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        border: 1px solid #000;
+        border-radius: 6px;
+        margin: 0 20px 10px 20px;
+      }
+    
+      .mobile-nav {
+        display: none;
+        flex-direction: column;
+        align-items: stretch; /* Ensures full width */
+        background-color: #dddddd;
+        margin: 0 20px 10px 20px;
+        border: 1px solid #000;
+        border-radius: 6px;
+        padding: 8px;
+        gap: 6px;
+      }
+      
+      .mobile-nav a {
+        display: flex;
+        justify-content: space-between; /* Separates text and arrow */
+        align-items: center;
+        background-color: #f0f0f0;
+        padding: 10px 12px;
+        font-size: 14px;
+        font-family: Georgia, serif;
+        border: 1px solid #aaa;
+        border-radius: 6px;
+        color: #000;
+        text-decoration: none;
+        transition: background-color 0.2s;
+      }
+      
+      .mobile-nav a::after {
+        content: "›"; /* Slightly nicer than plain > */
+        font-size: 16px;
+        margin-left: 10px;
+        color: #555;
+      }
+      
+      .mobile-nav a:hover,
+      .mobile-nav a:active {
+        background-color: #e0e0e0;
+        transform: none;
+        box-shadow: none;
+      }
+
+      .mobile-nav.open {
+        display: flex;
+      }
+
+      footer {
+        margin: 10px 20px 20px 20px;
+        padding: 20px 10px;
+        font-size: 14px;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .mobile-nav-toggle,
+      .mobile-nav,
+      .search-container,
+      .image-container {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
