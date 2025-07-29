@@ -76,7 +76,6 @@
       font-weight: normal;
       font-size: 18px;
       font-family: Georgia, serif;
-      flex-wrap: wrap;
     }
 
     nav div, nav a {
@@ -199,7 +198,7 @@
       border-radius: 10px;
     }
 
-    /* ------------------ MOBILE STYLES ------------------ */
+    /* ---------- MOBILE STYLES ---------- */
     @media (max-width: 768px) {
       header {
         flex-direction: column;
@@ -208,94 +207,124 @@
         text-align: center;
         gap: 15px;
       }
-    
+
       .logo {
         width: 90px;
         height: 90px;
         margin: 0 auto;
       }
-    
+
       .title {
         font-size: 28px;
         margin: 0;
       }
-    
+
       .social-icons {
         justify-content: center;
         gap: 10px;
       }
-    
+
       .social-icons a img {
         width: 45px;
         height: 45px;
       }
-    
+
       nav {
+        display: none;
+      }
+
+      .mobile-nav-toggle {
+        display: block;
+        background-color: #dddddd;
+        text-align: center;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        border: 1px solid #000;
+        border-radius: 6px;
+        margin: 0 20px 10px 20px;
+      }
+
+      .mobile-nav {
+        display: none;
         flex-direction: column;
         align-items: center;
-        padding: 12px 0;
-        gap: 12px;
-        font-size: 16px;
+        background-color: #dddddd;
+        margin: 0 20px 20px 20px;
+        padding: 15px;
+        gap: 10px;
+        border: 1px solid #000;
         border-radius: 6px;
-        margin-top: -5px;
       }
-    
+
+      .mobile-nav.open {
+        display: flex;
+      }
+
       .container {
-        flex-direction: column;
+        display: none;
+      }
+
+      .search-container,
+      .image-container {
+        background-color: #cce6ff;
         margin: 20px;
         padding: 20px;
-        height: auto;
+        border-radius: 8px;
+        border: 1px solid #000;
       }
-    
-      .search-box {
+
+      .search-box,
+      .image-box {
         width: 100%;
-        margin-bottom: 20px;
+        margin: 0;
       }
-    
+
       .search-input-container {
-        flex-direction: row;
+        display: flex;
         flex-wrap: wrap;
         gap: 10px;
       }
-    
+
       .search-input-container input[type="text"] {
         flex: 1 1 60%;
         min-width: 150px;
+        box-sizing: border-box;
       }
-    
+
       .search-input-container button {
         flex: 0 0 auto;
       }
-    
+
       .image-box {
-        width: 100%;
         height: auto;
         max-height: 300px;
       }
-    
+
       .image-box img {
         width: 100%;
         height: auto;
         object-fit: contain;
       }
-    
+
       .intro-outer {
         margin: 20px;
         padding: 20px;
       }
-    
+
       .intro-inner {
         padding: 20px;
       }
-    
+
       .intro-inner h2 {
         font-size: 22px;
       }
-    
+
       .intro-inner p {
         font-size: 17px;
       }
-    
+
       footer {
         margin: 20px;
         padding: 20px 10px;
@@ -303,6 +332,14 @@
       }
     }
 
+    @media (min-width: 769px) {
+      .mobile-nav-toggle,
+      .mobile-nav,
+      .search-container,
+      .image-container {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -320,6 +357,16 @@
     </div>
   </header>
 
+  <div class="mobile-nav-toggle">☰ Menu</div>
+  <nav class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="source.html">Sources</a>
+    <a href="countries.html">Countries</a>
+    <a href="families.html">Families</a>
+    <a href="unknown.html">Unknown Species</a>
+    <a href="ambiguous.html">Ambiguous Species</a>
+  </nav>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="source.html">Sources</a>
@@ -336,6 +383,22 @@
         <button>Search</button>
       </div>
     </div>
+    <div class="image-box">
+      <img src="imagenes/shells.webp" alt="Shells Image">
+    </div>
+  </div>
+
+  <!-- Mobile separated containers -->
+  <div class="search-container section-spacing">
+    <div class="search-box">
+      <div class="search-input-container">
+        <input type="text" placeholder="Search">
+        <button>Search</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="image-container section-spacing">
     <div class="image-box">
       <img src="imagenes/shells.webp" alt="Shells Image">
     </div>
@@ -369,6 +432,12 @@
   <footer>
     © 2025 Emmanuel Henao Estrada – All rights reserved.
   </footer>
+
+  <script>
+    document.querySelector('.mobile-nav-toggle').addEventListener('click', function () {
+      document.querySelector('.mobile-nav').classList.toggle('open');
+    });
+  </script>
 
 </body>
 </html>
