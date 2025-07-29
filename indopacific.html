@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indo-Pacific – Low Tide Seashells</title>
+  <link rel="icon" type="image/png" href="imagenes/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background-color: #f0f8ff;
+    }
+
+    header {
+      background-color: #cce6ff;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #000;
+      border-radius: 8px;
+      margin: 20px 20px 30px 20px;
+    }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 1px solid black;
+      object-fit: cover;
+      background-color: #94bfe6;
+      padding: 5px;
+    }
+
+    .title {
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-right: 10px;
+    }
+
+    .social-icons a img {
+      height: 70px;
+      width: 70px;
+      transition: box-shadow 0.3s ease;
+      border-radius: 12px;
+    }
+
+    .social-icons a img:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    nav {
+      background-color: #dddddd;
+      margin: 0 20px 30px 20px;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: flex-start;
+      gap: 40px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      font-weight: normal;
+      font-size: 18px;
+      font-family: Georgia, serif;
+    }
+
+    nav div, nav a {
+      text-decoration: none;
+      color: black;
+      transition: transform 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+    }
+
+    nav div:hover, nav a:hover {
+      transform: scale(1.05);
+      color: #005577;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      padding: 0 75px 60px 75px;
+      margin-top: 30px;
+      margin-bottom: -30px;
+    }
+
+    .gallery-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid #000;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #fff;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .image-box {
+      width: 100%;
+      height: 225px;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border: 1px solid #000;
+      border-radius: 8px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .image-box img:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .text-box {
+      background-color: rgba(204, 230, 255, 0.9);
+      color: black;
+      text-align: center;
+      font-size: 18px;
+      font-family: Georgia, serif;
+      width: 100%;
+      padding: 6px 0;
+      border-radius: 8px;
+      border: 1px solid #000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 16px;
+      color: #000;
+      background-color: #cce6ff;
+      border: 1px solid #000;
+      margin: 0px 20px 20px 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="imagenes/logo.png" alt="Logo" class="logo" />
+    <div class="title">LOW TIDE SEASHELLS</div>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/lowtide_seashells_/" target="_blank">
+        <img src="imagenes/instagram.png" alt="Instagram" />
+      </a>
+      <a href="https://www.conchology.be/?t=262&genus=&Genus_ID=&book=&family=&species=&commonNames=&locality=colombia&shell_ID=&view=&show=allimages" target="_blank">
+        <img src="imagenes/conchology.png" alt="Shell Icon" />
+      </a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="source.html">Sources</a>
+    <a href="countries.html">Countries</a>
+    <a href="families.html">Families</a>
+    <a href="unknown.html">Unknown Species</a>
+    <a href="ambiguous.html">Ambiguous Species</a>
+  </nav>
+
+  <div class="gallery-container">
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/frog.webp" alt="Shell 5">
+      </div>
+      <div class="text-box">Bufonaria Perelegans</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/goblet.webp" alt="Shell 7">
+      </div>
+      <div class="text-box">Cantharus Tranquebaricus</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/conomurex.webp" alt="Shell 7">
+      </div>
+      <div class="text-box">Conomurex Luhuanus</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/bat.webp" alt="Shell 3">
+      </div>
+      <div class="text-box">Cymbiola Vespertilio</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/tiger.webp" alt="Shell 4">
+      </div>
+      <div class="text-box">Cypraea Tigris</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/murex.webp" alt="Shell 8">
+      </div>
+      <div class="text-box">Hexaplex Cichoreum</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/rock.webp" alt="Shell 1">
+      </div>
+      <div class="text-box">Indothais Lacera</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/dog.webp" alt="Shell 5">
+      </div>
+      <div class="text-box">Laevistrombus Canarium</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/silver.webp" alt="Shell 6">
+      </div>
+      <div class="text-box">Lentigo Lentiginosus</div>
+    </div>
+    <div class="gallery-item">
+      <div class="image-box">
+        <img src="imagenes/money.webp" alt="Shell 5">
+      </div>
+      <div class="text-box">Monetaria Annulus</div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Emmanuel Henao Estrada – All rights reserved.
+  </footer>
+
+</body>
+</html>
