@@ -205,16 +205,16 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 15px;
+        padding: 20px 15px; /* Increased padding for taller header */
         gap: 10px;
       }
-
+    
       .logo {
         width: 65px;
         height: 65px;
         flex-shrink: 0;
       }
-
+    
       .title {
         font-size: 22px;
         font-weight: bold;
@@ -224,18 +224,20 @@
         flex-direction: column;
         justify-content: center;
         flex-grow: 1;
-        white-space: normal; /* allow two lines */
+        white-space: normal;
       }
-
+    
       .social-icons {
-        flex-direction: row;
-        gap: 6px;
+        flex-direction: column; /* Stack icons vertically */
+        gap: 6px;               /* Less spacing between them */
         margin: 0;
       }
-
+    
       .social-icons a img {
-        width: 28px;
-        height: 28px;
+        width: 35px;
+        height: 35px;
+        border-radius: 8px;      /* Rounded corners on square icons */
+        object-fit: cover;       /* Make sure they’re square visually */
       }
 
       nav {
