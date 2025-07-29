@@ -325,20 +325,12 @@
       }
     
       .family-columns {
-        display: block; /* override flex layout */
+        display: block; 
       }
       
       .family-column {
         width: 100%;
         padding: 15px;
-      }
-      
-      .family-columns .family-column:not(:first-child) {
-        display: none; /* hide columns 2 and 3 */
-      }
-      
-      .family-columns .family-column:first-child {
-        display: block;
       }
     
       .family-column a {
@@ -483,6 +475,25 @@
   </footer>
 
   <script>
+    document.querySelector('.mobile-nav-toggle').addEventListener('click', function () {
+      document.querySelector('.mobile-nav').classList.toggle('open');
+    });
+  </script>
+
+  <script>
+    // Run only on small screens
+    if (window.innerWidth <= 768) {
+      const columns = document.querySelectorAll('.family-column');
+      const firstColumn = columns[0];
+  
+      // Append all links from column 2 and 3 into column 1
+      for (let i = 1; i < columns.length; i++) {
+        const links = columns[i].querySelectorAll('a');
+        links.forEach(link => firstColumn.appendChild(link.cloneNode(true)));
+        columns[i].style.display = 'none'; // Hide column 2 and 3
+      }
+    }
+  
     document.querySelector('.mobile-nav-toggle').addEventListener('click', function () {
       document.querySelector('.mobile-nav').classList.toggle('open');
     });
